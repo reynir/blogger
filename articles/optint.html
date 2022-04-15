@@ -153,7 +153,7 @@ the information to produce better performing code!</p>
     | False : ('t, _, 't) t
 end
 
-let is_immediate : (Optint.t, int, int32) = match repr with
+let is_immediate : (Optint.t, int, int32) Conditional.t = match repr with
   | Immediate -&gt; Conditional.True
   | Non_immediate -&gt; Conditional.False
 </code></pre>

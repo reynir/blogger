@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <title>
         Dinosaure's website - Pasteur is up!
     </title>
@@ -15,7 +12,7 @@
     <link type="text/css" rel="stylesheet" href="../css/hl.css">
     <link type="text/css" rel="stylesheet" href="../css/style.css">
     <script src="../js/hl.js"></script>
-    <link rel="alternate" type="application/rss+xml" href="../feed.xml" title="RSS">
+    <link rel="alternate" type="application/rss+xml" href="../feed.xml" title="blog.osau.re">
   </head>
   <body>
     <header>
@@ -130,7 +127,7 @@ being integrated into <a href="https://github.com/aantron/dream">Dream</a>. It i
 goal is that the server should not store the paste in clear text and that the
 only person in possession of the encryption key is the author of the paste.</p>
 <p>The trick is to encrypt the content directly in the webbrowser and to transmit
-only the encrypted content to the server (with POST and <code>multipart\_form</code>).
+only the encrypted content to the server (with POST and <code>multipart_form</code>).
 Then, in JavaScript, we can ask (still on the client side) to redirect the
 client to the result of its paste with its key.</p>
 <p>This way, the key is <strong>never</strong> transmitted to the server (or more precisely, to
@@ -343,9 +340,6 @@ handle reads and writes. The latter is also available in a <em>functor</em> in t
 the given TCP/IP stack and an HTTPS server from the same stack and <code>ocaml-tls</code>.
 In this ceremony, there is of course the support of <code>h2</code> which is finally very
 close in terms of API than <code>http/af</code>.</p>
-<p>The code of Paf is both very succinct and abstract which may be difficult to
-understand for a novice runner but the <a href="https://github.com/dinosaure/paf-le-chien/blob/master/README.md">README.md</a> or the tests
-give a good overview of its use in the context of MirageOS but also outside!</p>
 <h3>Multiple iterations</h3>
 <p>The code of Paf is both very succinct and abstract which may be difficult to
 understand for a novice runner but the README.md or the tests give a good

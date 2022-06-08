@@ -28,6 +28,7 @@ depends: [
   "yocaml_yaml"
   "yocaml_markdown"
   "yocaml_jingoo"
+  "yocaml_irmin"
 ]
 
 pin-depends: [
@@ -36,4 +37,5 @@ pin-depends: [
   ["yocaml_yaml.dev" "git+https://github.com/xhtmlboi/yocaml.git"]
   ["yocaml_markdown.dev" "git+https://github.com/xhtmlboi/yocaml.git"]
   ["yocaml_jingoo.dev" "git+https://github.com/xhtmlboi/yocaml.git"]
+  ["yocaml_irmin.dev" "git+https://github.com/xhtmlboi/yocaml.git"]
 ]
